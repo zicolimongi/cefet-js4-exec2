@@ -1,0 +1,41 @@
+body {
+    background-color: #d7d7fa;
+}
+.tutorial {
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+    padding: 0.5em 0.75em;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family:'Cookie', cursive;
+    font-size: 2em;
+    -webkit-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+    opacity: 0;
+}
+.tutorial.tutorial-on {
+    opacity: 1;
+    -webkit-animation: bounce 1s ease-out 0s infinite alternate;
+    animation: bounce 1s ease-out 0s infinite alternate;
+}
+@-webkit-keyframes bounce {
+    from {
+        right: 20px;
+    }
+    to {
+        right: 40px;
+    }
+}
+@keyframes bounce {
+    from {
+        right: 20px;
+    }
+    to {
+        right: 40px;
+    }
+}
+strong {
+    font-weight: 400;
+    color: #fc49d8;
+}
